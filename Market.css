@@ -1,0 +1,320 @@
+/* 🌐 GLOBAL PAGE */
+.market-page {
+  padding: 16px;
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto; /* centers content */
+}
+
+.app-label {
+
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #333;
+
+}
+.back-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  background: #c6e44b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.back-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 🧭 HEADER (if used) */
+.market-header {
+  margin-bottom: 12px;
+}
+
+.market-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.market-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* 🗺 MAP CONTAINER */
+.map-card {
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #fff;
+
+}
+
+/* 🔎 SEARCH WRAPPER */
+.market-search {
+  position: relative;
+  margin-bottom: 12px;
+  max-width: 100%;
+}
+
+.market-search input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    border: 2px solid #000000;
+}
+
+.market-search input:focus {
+  border-color: #c6e44b;
+}
+
+/* 🔽 SUGGESTIONS DROPDOWN */
+.suggestions-box {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestion-item:hover {
+  background: #f9fafb;
+}
+
+.suggestion-item strong {
+  display: block;
+  font-size: 14px;
+  color: #111827;
+}
+
+.suggestion-item span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* 🧾 HORIZONTAL SCROLL */
+.market-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 14px 4px;
+  margin-top: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+/* hide scrollbar */
+.market-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* 📦 MARKET CARD */
+.market-card {
+  min-width: 220px;
+  background: #fff fff;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: 0.2s ease;
+  scroll-snap-align: start;
+  border: 1px solid #f3f4f6;
+}
+
+.market-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.market-card h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.market-card p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* 🟢 ACTIVE CARD */
+.market-card.active {
+  border: 2px solid #000000;
+  background-color:#c6e44b ;
+}
+
+/* 📍 BOTTOM INFO PANEL */
+.map-bottom-info {
+  margin-top: 12px;
+  background: #c6e44b;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  /* ✅ better border */
+  border: 2px solid #000000;
+}
+
+.no-selected {
+  text-align: center;
+  color: #0c0f13;
+  font-style: italic;
+}
+
+/* 📱 RESPONSIVE CLEAN SPACING */
+@media (max-width: 768px) {
+  .market-page {
+    padding: 12px;
+  }
+
+  .market-card {
+    min-width: 180px;
+  }
+}
+.section-title {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: ce;
+}
+.offline-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.offline-modal {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  text-align: center;
+  width: 80%;
+  max-width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.offline-modal h2 {
+  margin-bottom: 10px;
+}
+
+.offline-modal p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.offline-modal button {
+  background: #D3F04F;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.skeleton-wrapper {
+  padding: 16px;
+}
+
+.skeleton-header,
+.skeleton-search,
+.skeleton-map,
+.skeleton-card {
+  background: #e0e0e0;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-header {
+  height: 20px;
+  width: 60%;
+  margin-bottom: 12px;
+}
+
+.skeleton-search {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.skeleton-map {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.skeleton-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-card {
+  height: 60px;
+  width: 100%;
+}
+
+/* shimmer */
+.skeleton-header::after,
+.skeleton-search::after,
+.skeleton-map::after,
+.skeleton-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(500px);
+  }
+}

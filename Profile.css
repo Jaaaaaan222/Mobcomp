@@ -1,0 +1,161 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* PAGE */
+.profile-page {
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  background: #f6f7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.profile-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.profile-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* CONTENT */
+.profile-content {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* SECTION */
+.profile-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.profile-section h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row span {
+  color: #666;
+  font-size: 14px;
+}
+
+.row strong {
+  color: #111;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.row button {
+  background: #eaeaea;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.row button:hover {
+  background: #d6d6d6;
+}
+
+/* EDIT INPUT ROW */
+.edit-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+.edit-row input:focus {
+  border-color: #c6e44b;
+  box-shadow: 0 0 0 2px rgba(198,228,75,0.3);
+}
+
+/* SAVE BUTTON */
+.edit-row button {
+  background: #c6e44b;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ACTION BUTTON */
+.action-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* LOGOUT */
+.logout-btn {
+  width: 100%;
+  padding: 14px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* MESSAGES */
+.error {
+  color: red;
+  text-align: center;
+  font-size: 13px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  font-size: 13px;
+}
